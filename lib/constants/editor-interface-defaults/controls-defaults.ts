@@ -187,7 +187,7 @@ export default function getDefaultControlOfField(field: ContentFields) {
     return {
       widgetId: 'dropdown',
       fieldId: field.id,
-      widgetNameSpace: 'builtin',
+      widgetNamespace: 'builtin',
     }
   }
 
