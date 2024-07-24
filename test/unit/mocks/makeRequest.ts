@@ -1,8 +1,8 @@
-import sinon from 'sinon'
+import { MockedFunction, vi } from 'vitest'
 import { MakeRequest } from '../../../lib/common-types'
 
 export default function setupMakeRequest(
   promise: Promise<unknown> = Promise.resolve({ data: {} })
-): MakeRequest {
-  return sinon.stub().returns(promise)
+): MockedFunction<MakeRequest> & MakeRequest {
+  return vi.fn().mockReturnValue(promise)
 }
