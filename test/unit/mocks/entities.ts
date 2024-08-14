@@ -1366,6 +1366,7 @@ export {
   sysMock,
   spaceMock,
   bulkActionMock,
+  bulkActionPublishMock,
   commentMock,
   contentTypeMock,
   editorInterfaceMock,
